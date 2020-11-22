@@ -25,7 +25,7 @@ export default function MakeAColor(props) {
     return (
         <div className="make-a-color">
             <h1>Random unnamed color<br/>(according to CSS)</h1>
-            <div className="color-box" style={{backgroundColor: randomColor, color: invert(randomColor, true)}}><h1>{randomColor}</h1><h1>{nearest(randomColor).name}</h1></div>
+            <div className="color-box" style={{backgroundColor: randomColor, color: invert(randomColor, true)}}><h1>{nearest(randomColor).name}</h1><h1>{randomColor}</h1></div>
             <button onClick={makeAnUnnamedColor}>Generate random color</button>
         </div>
         
