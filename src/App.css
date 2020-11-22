@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+.color-box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.named-colors-list, .make-a-color {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.named-colors-list {
+  flex-flow: row wrap;
+}
+
+.make-a-color {
+  flex-flow: column wrap;
+}
+
+@media(max-width: 600px) {
+  .color-box {
+    width: 100vw;
+  }
+}
+
+button {
+  margin: 20px;
+}
