@@ -37,13 +37,17 @@
   }
 }
 
-.color-box {
+.color-box, .color-box-big {
   width: 300px;
   height: 300px;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
+}
+
+.color-box-big {
+  width: 600px;
 }
 
 .named-colors-list, .make-a-color {
@@ -62,7 +66,7 @@
 }
 
 @media(max-width: 600px) {
-  .color-box {
+  .color-box, .color-box-big {
     width: 100vw;
   }
 }
